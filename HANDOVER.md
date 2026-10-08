@@ -10,12 +10,22 @@ including /brag, adapted to her business and usable for any business (David's to
 - Install for Claude Code: `install.sh` · for claude.ai: zip of `skills/ugc-studio/`
 
 ## Status (update this block as you go)
-- [x] scripts/ugc.py written (voices, tts, transcribe, captions, render, concat, qc, selftest) — stdlib + ffmpeg + curl
-- [ ] ugc.py selftest run on this Mac (RTL gate)
-- [ ] end-to-end proof on Leeya's real short (`~/Projects/02-clients/leeya-katz-v3/public/videos/short_02_he.mp4`,
-      Scribe words already in `~/Projects/Active/leeya-media-promo-videos/he_src/short_02_he_scribe.json` — no API cost)
-- [ ] SKILL.md, references, profiles, README, install.sh
-- [ ] publish (GitHub CodeNoLimits/dreamnova-ugc-studio, no secrets) + zip + report to David
+- [x] scripts/ugc.py (voices, tts, transcribe, captions, render, concat, qc, selftest) — stdlib + ffmpeg + curl, Python 3.9 OK
+- [x] selftest PASS on this Mac: logic + Hebrew RTL render gate (word widths [95,64,164,109])
+- [x] E2E on Leeya's real short_06_he (no API cost): captions tiktok + box → render → qc 8/8 PASS; mixed HE/Latin
+      lines (SEO, ה-AI, ChatGPT, GEO) zoom-checked at native resolution = correct RTL order
+- [x] scripts/icons_reel.py ("wow" reel she liked, generalised from build_he.py, JSON spec, icons fetched from
+      Fluent/simple-icons/lobe CDNs) → hyperframes check PASS → render → qc 8/8 PASS → contact sheet looked at
+- [x] SKILL.md (5 rails), references (method-ugc, engines, setup, hebrew, qc, brag, business-brief), profiles (leeyamedia, dreamnova-studio), README, install.sh, MIT
+- [x] GitHub PUBLIC https://github.com/CodeNoLimits/dreamnova-ugc-studio + release v1.0.0 (ugc-studio.zip, pack zip). Secret/confidential grep = clean
+- [x] WhatsApp 5/5 (Leeya 91564458151954@lid: zip + demo · David: zip + pack + demo) — David's explicit GO 08/10 20:45
+
+## Not done / for Codex to test & polish
+- install.sh not executed on a clean Mac (only `bash -n`); run it on Leeya's Mac or a fresh user.
+- `ugc.py tts`, `transcribe`, `voices` not called live (to avoid spending; key `dn-secret ELEVENLABS_KEY` exists). Test with 1 short line.
+- ElevenLabs connector rails (Aurora/OmniHuman/Kling/Omni) documented from live model guides, not run (credits).
+- icons_reel: GSAP "target not found" warnings at render (harmless, inherited from build_he.py) — find the empty selector.
+- Leeya's cloned voice_id: fill `profiles/leeyamedia.md` after she clones her voice.
 
 ## Sources used (do not rebuild, reuse)
 - /brag (MIT, latent-spaces/brag) — on Opus 5.5 it hands off to brag-slim. Install: `npx skills add https://github.com/latent-spaces/brag --skill brag -g -y`
