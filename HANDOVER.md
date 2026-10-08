@@ -41,6 +41,15 @@ including /brag, adapted to her business and usable for any business (David's to
 - ⚠️ **Sécurité** : `/api/david-key` sert publiquement `DAVID_ELEVENLABS_KEY` et `DAVID_GEMINI_KEY` (depuis ~mai). Codex doit
   fermer la route ; la ROTATION des 2 clés reste une décision de David (recommandée).
 
+## Phase 3 (08/10 21:45–21:55) — bridge modernisé par Claude (Codex bloqué)
+- Codex lancé sur le brief → refus immédiat « usage limit, try again Oct 15 » → David avait dit « tu le fais toi-même » → fait.
+- Bridge refait : une page, charte Leeya (blanc, Heebo/Open Sans, 0 émoji, pilule, HE par défaut + EN/FR), 4 sections
+  (créer une vidéo · ses vidéos · ses outils · aide). Prod vérifiée en navigateur (HE RTL 375 px sans scroll, vidéos/guide 200).
+- **Sécurité** : `/api/david-key` SUPPRIMÉE (404) + domain/crm/social/wordpress/landing supprimées ; log-video et webhook
+  fermés par défaut. Rapport : `~/Projects/Active/leeya-studio-bridge/docs/REPORT_MODERNISATION_2026-10-08.md`.
+- Décisions David : rotation des 2 clés exposées (recommandée) ; abonnement ntfy du topic `david-leeya-studio-…`.
+- Codex après le 15/10 : relecture seulement (fil `leeya-bridge-v2`), le brief est marqué FAIT.
+
 ## Not done / for Codex to test & polish
 - install.sh not executed on a clean Mac (only `bash -n`); run it on Leeya's Mac or a fresh user.
 - `ugc.py tts`, `transcribe`, `voices` not called live (to avoid spending; key `dn-secret ELEVENLABS_KEY` exists). Test with 1 short line.
