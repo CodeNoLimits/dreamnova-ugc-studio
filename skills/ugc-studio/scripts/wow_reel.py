@@ -110,8 +110,8 @@ def build(spec, base):
         layers.append(f'<div class="header" style="height:{hdr}px"><div class="mark" id="mark">{html.escape(spec.get("outro", {}).get("wordmark", ""))}</div></div>')
         tl.append(f'tl.fromTo("#mark",{{opacity:0}},{{opacity:1,duration:.5}},{T((hook or {}).get("until", 0) + 0.2)});')
     if hook:
-        lines = "".join(f'<div class="hl">' + "".join(f'<span class="hw">{html.escape(w)} </span>' for w in ln.split()) + "</div>"
-                        for ln in hook["lines"])
+        lines = "".join('<div class="hl">' + " ".join(f'<span class="hw">{html.escape(w)}</span>' for w in ln.split()) + "</div>"
+                        for ln in hook["lines"])  # spaces outside inline-blocks, or the words glue together
         top = max((hdr - 2 * 92) // 2, 40) if hdr else 230
         boxed = "" if hdr else " boxed"  # no header: white card behind the title so it reads on any footage
         layers.append(f'<div class="hook{boxed}" id="hook" style="top:{hook.get("top", top)}px;--hs:{hook.get("size", 76)}px;{dirc}">{lines}<div class="hbar" id="hbar"></div></div>')
@@ -127,7 +127,7 @@ def build(spec, base):
         for kd, ky, _ in icons:
             icon_asset(kd, ky, f"{out}/img")
         a0 = find(cd["seg"], cd["at"])[0] - 0.05
-        first = min([find(cd["seg"], tk)[0] for _, _, tk in icons] + [a0 + 0.05]) - 0.05
+        first = min([find(cd["seg"], tk, a0 - 0.3)[0] for _, _, tk in icons] + [a0 + 0.05]) - 0.05
         T0 = min(a0, first)
         end = find(cd["seg"], cd["until"], T0)[1] + 0.3 if cd.get("until") else T0 + float(cd.get("dur", 2.2))
         cid = f"k{ci}"
@@ -136,7 +136,7 @@ def build(spec, base):
         layers.append(f'<div class="card{" multi" if len(icons) >= 3 else ""}" id="{cid}" style="top:{cd.get("top", card_top)}px;{dirc}"><div class="irow">{ih}</div>{lh}</div>')
         tl.append(f'tl.fromTo("#{cid}",{{autoAlpha:0}},{{autoAlpha:1,duration:.2}},{T(T0)});')
         for ii, (kd, ky, tk) in enumerate(icons):
-            ta = max(find(cd["seg"], tk)[0] - 0.02, T0)
+            ta = max(find(cd["seg"], tk, a0 - 0.3)[0] - 0.02, T0)
             sel = f"#{cid} .ic:nth-child({ii + 1})"
             tl.append(f'tl.fromTo("{sel}",{{scale:0,rotateY:-100,opacity:0}},{{scale:1,rotateY:0,opacity:1,duration:.75,ease:"back.out(2.2)"}},{T(ta)});')
             tl.append(f'tl.fromTo("{sel} .shine",{{x:"-130%"}},{{x:"230%",duration:.9,ease:"power2.inOut"}},{T(ta + .3)});')
@@ -152,9 +152,11 @@ def build(spec, base):
     for s in segs:
         chunks, cur = [], []
         for w in s["words"]:
+            if cur and sum(len(x[0]) + 1 for x in cur) + len(w[0]) > 20:
+                chunks.append(cur)
+                cur = []
             cur.append(w)
-            n = sum(len(x[0]) for x in cur) + len(cur)
-            if re.search(r"[.?!]$", w[0]) or (len(cur) >= 2 and re.search(r"[,;:]$", w[0])) or len(cur) >= 4 or n >= 24:
+            if re.search(r"[.?!]$", w[0]) or (len(cur) >= 2 and re.search(r"[,;:]$", w[0])) or len(cur) >= 4:
                 chunks.append(cur)
                 cur = []
         if cur:

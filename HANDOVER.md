@@ -20,6 +20,27 @@ including /brag, adapted to her business and usable for any business (David's to
 - [x] GitHub PUBLIC https://github.com/CodeNoLimits/dreamnova-ugc-studio + release v1.0.0 (ugc-studio.zip, pack zip). Secret/confidential grep = clean
 - [x] WhatsApp 5/5 (Leeya 91564458151954@lid: zip + demo · David: zip + pack + demo) — David's explicit GO 08/10 20:45
 
+## Phase 2 (08/10 20:50–21:45) — bridge + 2 "wow" videos for Leeya + Codex handoff
+- **Bridge** `https://leeya-studio-bridge.vercel.app` : source récupérée depuis Vercel → `~/Projects/Active/leeya-studio-bridge/`
+  (git local). Section « UGC Studio » ajoutée + 2 vidéos exemples (`public/ugc/*.mp4`, listées dans `app/ugc-examples.json`).
+  Déploiements prod READY : `dpl_EfYQRURtjtsSx3r6moX5aTYDXYdU` puis `dpl_4RNDrTUxNcDPnRyTxCu6zou6uCPs` ; vérifié en navigateur (mp4 200 video/mp4).
+- **2 vidéos UGC** (`~/Projects/Active/leeya-ugc-wow-2026-10-08/`) :
+  - `v1_source.mp4` 39 s — son short le plus récent (YouTube `Q1qAy0Gx5_k`, « YouTube היא המקור »), en-tête blanc qui masque
+    ses incrustations gravées, 6 inserts Grok, 7 cartes d'icônes, sous-titres karaoké, fin « שנדבר יוטיוב? / leeyamedia.com ».
+  - `v2_rented.mp4` 45 s — remake de « שטח שכור » (short_01), 6 inserts Grok, 7 cartes.
+  - QC : 9/9 portes chacune + planches regardées ; 3 défauts trouvés à l'œil (titre collé, carte déclenchée trop tôt,
+    sous-titre sur 2 lignes) → corrigés dans `wow_reel.py` puis re-rendus. Envoyées WhatsApp 4/4 (Leeya + David, versions _wa ≈13-15 Mo).
+  - 12 plans Grok Imagine (compte heavy, outils natifs image_gen → image_to_video 720p 9:16, 12/12, 0 échec) :
+    `media/R*/clip.mp4`, prompts `media/prompts.json`.
+- **Skill v2** : `scripts/wow_reel.py` (moteur), `scripts/grok_broll.py`, `examples/` (2 specs + prompts). Release GitHub v1.1.0 avec les 2 vidéos.
+- **Codex** : brief complet `~/Projects/Active/leeya-studio-bridge/docs/BRIEF_MODERNISATION_2026-10-08.md` (refonte totale du
+  bridge selon les goûts de Leeya + sécurité). Lancé en tâche de fond 21:42 (`docs/run_codex_modernisation.sh`, fil
+  `leeya-bridge-v2` = `01a11cd2-b152-7be3-aa31-0f6baf04fdf2`, journal `~/opus48/codex_lane/2026-10-08_leeya-bridge-v2.jsonl`).
+  Relancer/reprendre : `bash ~/Projects/Active/leeya-studio-bridge/docs/run_codex_modernisation.sh`. Codex doit livrer
+  `docs/REPORT_MODERNISATION_2026-10-08.md` + dn-report. **Vérifier sa sortie** (producteur ≠ vérificateur).
+- ⚠️ **Sécurité** : `/api/david-key` sert publiquement `DAVID_ELEVENLABS_KEY` et `DAVID_GEMINI_KEY` (depuis ~mai). Codex doit
+  fermer la route ; la ROTATION des 2 clés reste une décision de David (recommandée).
+
 ## Not done / for Codex to test & polish
 - install.sh not executed on a clean Mac (only `bash -n`); run it on Leeya's Mac or a fresh user.
 - `ugc.py tts`, `transcribe`, `voices` not called live (to avoid spending; key `dn-secret ELEVENLABS_KEY` exists). Test with 1 short line.
