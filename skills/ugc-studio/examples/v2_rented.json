@@ -1,0 +1,225 @@
+{
+ "out": "v2_rented",
+ "rtl": true,
+ "music": "/Users/dreamnova/Projects/Active/leeya-media-promo-videos/wow_src/bgm.mp3",
+ "music_vol": 0.4,
+ "colors": {
+  "gold": "#c9a961",
+  "red": "#fa2c2c"
+ },
+ "header": null,
+ "hook": {
+  "lines": [
+   "למה אינסטגרם לא עובד",
+   "יותר ב-2026?"
+  ],
+  "until": 3.5,
+  "top": 150,
+  "size": 64
+ },
+ "lower": [
+  "ליאה כץ",
+  "LEEYAMEDIA"
+ ],
+ "lower_at": [
+  3.8,
+  7.6
+ ],
+ "outro": {
+  "wordmark": "LEEYAMEDIA",
+  "lines": [
+   "שנדבר יוטיוב?"
+  ],
+  "url": "leeyamedia.com",
+  "dur": 3.4
+ },
+ "replace": {
+  "Instagram": "אינסטגרם",
+  "Facebook": "פייסבוק",
+  "TikTok": "טיקטוק"
+ },
+ "segments": [
+  {
+   "id": "A",
+   "video": "/Users/dreamnova/Projects/02-clients/leeya-katz-v3/public/videos/short_01_he.mp4",
+   "words": "/Users/dreamnova/Projects/Active/leeya-media-promo-videos/he_src/short_01_he_scribe.json",
+   "start": 0.3,
+   "end": 13.45
+  },
+  {
+   "id": "B",
+   "video": "/Users/dreamnova/Projects/02-clients/leeya-katz-v3/public/videos/short_01_he.mp4",
+   "words": "/Users/dreamnova/Projects/Active/leeya-media-promo-videos/he_src/short_01_he_scribe.json",
+   "start": 35.88,
+   "end": 52.55
+  },
+  {
+   "id": "C",
+   "video": "/Users/dreamnova/Projects/02-clients/leeya-katz-v3/public/videos/short_01_he.mp4",
+   "words": "/Users/dreamnova/Projects/Active/leeya-media-promo-videos/he_src/short_01_he_scribe.json",
+   "start": 77.68,
+   "end": 85.45
+  },
+  {
+   "id": "D",
+   "video": "/Users/dreamnova/Projects/02-clients/leeya-katz-v3/public/videos/short_01_he.mp4",
+   "words": "/Users/dreamnova/Projects/Active/leeya-media-promo-videos/he_src/short_01_he_scribe.json",
+   "start": 65.74,
+   "end": 69.9
+  }
+ ],
+ "cutaways": [
+  {
+   "seg": "A",
+   "at": "העסק",
+   "lead": 0.05,
+   "dur": 2.85,
+   "video": "media/R1_sandcastle/clip.mp4",
+   "from": 2.6
+  },
+  {
+   "seg": "B",
+   "at": "ואז",
+   "lead": 0.0,
+   "dur": 2.1,
+   "video": "media/R1_buried/clip.mp4",
+   "from": 1.4
+  },
+  {
+   "seg": "B",
+   "at": "מרוץ",
+   "lead": 0.1,
+   "dur": 1.9,
+   "video": "media/R1_wheel/clip.mp4",
+   "from": 1.2
+  },
+  {
+   "seg": "B",
+   "at": "בונים",
+   "lead": 0.1,
+   "dur": 1.85,
+   "video": "media/R1_estate/clip.mp4",
+   "from": 3.4
+  },
+  {
+   "seg": "C",
+   "at": "ספריית",
+   "lead": 0.1,
+   "dur": 1.5,
+   "video": "media/R2_catalog/clip.mp4",
+   "from": 2.0
+  },
+  {
+   "seg": "C",
+   "at": "בזמן",
+   "lead": 0.1,
+   "dur": 3.4,
+   "video": "media/R1_night/clip.mp4",
+   "from": 0.8
+  }
+ ],
+ "cards": [
+  {
+   "seg": "A",
+   "top": 1000,
+   "icons": [
+    [
+     "brand",
+     "instagram",
+     "Instagram"
+    ],
+    [
+     "brand",
+     "facebook",
+     "Facebook"
+    ],
+    [
+     "brand",
+     "tiktok",
+     "TikTok"
+    ]
+   ],
+   "label": "שטח שכור",
+   "at": "Instagram",
+   "until": "שכור"
+  },
+  {
+   "seg": "A",
+   "icons": [
+    [
+     "fl",
+     "locked",
+     "נחסם"
+    ]
+   ],
+   "label": "החשבון נחסם",
+   "at": "נחסם",
+   "dur": 1.6
+  },
+  {
+   "seg": "B",
+   "icons": [
+    [
+     "fl",
+     "hourglass_not_done",
+     "עשרים"
+    ]
+   ],
+   "label": "חי 24 שעות",
+   "at": "חי",
+   "until": "שעות"
+  },
+  {
+   "seg": "B",
+   "icons": [
+    [
+     "brand",
+     "youtube",
+     "ביוטיוב"
+    ]
+   ],
+   "label": "נדל\"ן שהוא מניב",
+   "at": "ביוטיוב",
+   "until": "מניב"
+  },
+  {
+   "seg": "C",
+   "icons": [
+    [
+     "fl",
+     "handshake",
+     "שסוגרת"
+    ]
+   ],
+   "label": "סוגרת עבורכם עסקאות",
+   "at": "שסוגרת",
+   "until": "עסקאות"
+  },
+  {
+   "seg": "D",
+   "icons": [
+    [
+     "fl",
+     "fire",
+     "ויראלי"
+    ]
+   ],
+   "label": "ויראלי לרגע",
+   "at": "ויראלי",
+   "until": "לרגע"
+  },
+  {
+   "seg": "D",
+   "icons": [
+    [
+     "fl",
+     "crown",
+     "אוטוריטה"
+    ]
+   ],
+   "label": "אוטוריטה לתמיד",
+   "at": "אוטוריטה",
+   "until": "לתמיד"
+  }
+ ]
+}

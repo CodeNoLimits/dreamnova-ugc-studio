@@ -1,0 +1,63 @@
+{
+ "_style": "editorial premium magazine photography, soft natural light, cream and warm white tones, minimalist composition, subtle muted red and warm gold accents only, shallow depth of field, quiet luxury mood, photorealistic, no text, no letters, no numbers, no logos, no watermark, no people, no faces, vertical 9:16 composition",
+ "R1_sandcastle": {
+  "still": "a delicate hand-sculpted sandcastle shaped like a tiny elegant boutique storefront with arched windows, standing on smooth pale cream sand at the water's edge, soft morning light, a small muted red silk ribbon on its little door, calm sea behind",
+  "motion": "a gentle wave rolls in and slowly washes the sandcastle away until only smooth wet sand remains, static camera, realistic water physics, quiet and slow, no text appears",
+  "duration": 6
+ },
+ "R1_buried": {
+  "still": "a single crisp white square card lying alone in the center of a pale cream table under a soft spotlight, thin gold edge on the card, top-down view",
+  "motion": "dozens of identical white square cards fall from above and pile up until the first card is completely buried, top-down static camera, realistic paper physics, no text appears",
+  "duration": 6
+ },
+ "R1_wheel": {
+  "still": "a small white mouse running inside a polished brass exercise wheel on a clean cream background, soft studio light, shallow depth of field",
+  "motion": "the mouse keeps running and the brass wheel spins endlessly, camera slowly pushes in, everything else stays the same, no text appears",
+  "duration": 6
+ },
+ "R1_estate": {
+  "still": "a modern minimalist white villa standing on its own green land at golden hour, clean architecture, warm light, a single deep red front door, wide calm sky",
+  "motion": "smooth time-lapse as the sun sets, the windows light up one by one with warm golden light and the garden lights turn on, slow gentle push-in, the house stays identical, no text appears",
+  "duration": 6
+ },
+ "R1_night": {
+  "still": "a serene minimalist bedroom at night in soft blue moonlight, a smartphone lying face-up on a white nightstand beside a small vase with one white flower, the phone screen dark",
+  "motion": "the phone screen softly lights up with a warm blank glow three times as if notifications arrive, everything else perfectly still, static camera, the screen shows only soft light, no text appears",
+  "duration": 6
+ },
+ "R2_catalog": {
+  "still": "an antique wooden library card catalog cabinet with small brass handles in a bright cream room, one drawer pulled open, soft window light",
+  "motion": "the wooden cabinet slowly dissolves into thousands of tiny golden light particles that drift upward, slow push-in, no text appears",
+  "duration": 6
+ },
+ "R2_scan": {
+  "still": "a vast bright cream space filled with thousands of floating translucent blank pages and small blank glowing panels, a soft white luminous sphere hovering in the center",
+  "motion": "a beam of warm golden light from the sphere sweeps slowly across all the floating pages like a scanner, each page shimmers as the beam passes, slow orbit camera, no text appears",
+  "duration": 6
+ },
+ "R2_chosen": {
+  "still": "a long row of identical dim blank screens floating in a bright white gallery, only one screen in the middle glows with a soft warm red light",
+  "motion": "the glowing red screen slowly moves forward toward the camera while the other screens fade into soft blur, its light gently intensifies, no text appears",
+  "duration": 6
+ },
+ "R2_links": {
+  "still": "a tangled knot of thin gold chains lying on smooth cream silk, macro photograph",
+  "motion": "the gold chains slowly untangle by themselves and dissolve into fine golden light, macro, slow and elegant, no text appears",
+  "duration": 6
+ },
+ "R3_spring": {
+  "still": "a crystal-clear natural spring bubbling up from a smooth white marble basin in a serene cream stone courtyard, several thin streams of water flowing outward from it in different directions, soft golden morning light",
+  "motion": "the spring keeps bubbling and the water flows outward into all the streams, which branch further and spread across the courtyard, slow aerial push-in, no text appears",
+  "duration": 6
+ },
+ "R3_ripples": {
+  "still": "perfectly still water in a shallow white marble pool, soft overhead light, one single drop of water suspended just above the surface",
+  "motion": "the drop falls into the water and perfect concentric ripples spread outward across the whole pool, slow motion, static top-down camera, no text appears",
+  "duration": 6
+ },
+ "R3_filmcut": {
+  "still": "one long glossy strip of cinema film unrolled across a cream table, a pair of elegant golden scissors resting beside it, soft studio light, top-down view",
+  "motion": "the golden scissors cut the long film strip into many short equal pieces which slide apart neatly into a row, smooth top-down camera, no text appears",
+  "duration": 6
+ }
+}

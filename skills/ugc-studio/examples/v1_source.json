@@ -1,0 +1,257 @@
+{
+ "out": "v1_source",
+ "rtl": true,
+ "music": "/Users/dreamnova/Projects/Active/leeya-media-promo-videos/wow_src/bgm.mp3",
+ "music_vol": 0.4,
+ "colors": {
+  "gold": "#c9a961",
+  "red": "#fa2c2c"
+ },
+ "header": {
+  "height": 400
+ },
+ "hook": {
+  "lines": [
+   "כך תוכן יוטיוב חושף",
+   "אותך לקהל פרימיום"
+  ],
+  "until": 4.35,
+  "top": 34,
+  "size": 64
+ },
+ "lower": [
+  "ליאה כץ",
+  "LEEYAMEDIA"
+ ],
+ "lower_at": [
+  10.5,
+  13.8
+ ],
+ "outro": {
+  "wordmark": "LEEYAMEDIA",
+  "lines": [
+   "שנדבר יוטיוב?"
+  ],
+  "url": "leeyamedia.com",
+  "dur": 3.4
+ },
+ "replace": {},
+ "segments": [
+  {
+   "id": "A",
+   "video": "src/Q1qAy0Gx5_k.mp4",
+   "words": "src/Q1q_scribe.json",
+   "start": 0.08,
+   "end": 21.26
+  },
+  {
+   "id": "B",
+   "video": "src/Q1qAy0Gx5_k.mp4",
+   "words": "src/Q1q_scribe.json",
+   "start": 25.64,
+   "end": 34.96
+  },
+  {
+   "id": "C",
+   "video": "src/Q1qAy0Gx5_k.mp4",
+   "words": "src/Q1q_scribe.json",
+   "start": 39.04,
+   "end": 44.62,
+   "video_end": 44.45
+  }
+ ],
+ "cutaways": [
+  {
+   "seg": "A",
+   "at": "יוטיוב",
+   "lead": 0.12,
+   "dur": 2.1,
+   "video": "media/R3_spring/clip.mp4",
+   "from": 2.4
+  },
+  {
+   "seg": "A",
+   "at": "מקור",
+   "lead": 0.12,
+   "dur": 1.95,
+   "video": "media/R3_ripples/clip.mp4",
+   "from": 0.7
+  },
+  {
+   "seg": "B",
+   "at": "מקור",
+   "lead": 0.1,
+   "dur": 1.6,
+   "video": "media/R2_chosen/clip.mp4",
+   "from": 2.6
+  },
+  {
+   "seg": "B",
+   "at": "לפענח",
+   "lead": 0.1,
+   "dur": 1.39,
+   "video": "media/R2_scan/clip.mp4",
+   "from": 1.5
+  },
+  {
+   "seg": "B",
+   "at": "שזה",
+   "lead": 0.15,
+   "dur": 1.95,
+   "video": "media/R2_links/clip.mp4",
+   "from": 1.2
+  },
+  {
+   "seg": "C",
+   "at": "וממנו",
+   "lead": 0.1,
+   "dur": 2.6,
+   "video": "media/R3_filmcut/clip.mp4",
+   "from": 1.6
+  }
+ ],
+ "cards": [
+  {
+   "seg": "A",
+   "top": 1000,
+   "icons": [
+    [
+     "brand",
+     "instagram",
+     "באינסטגרם"
+    ],
+    [
+     "brand",
+     "tiktok",
+     "בטיקטוק"
+    ],
+    [
+     "brand",
+     "youtube",
+     "ביוטיוב"
+    ]
+   ],
+   "label": "כבר לא מספיק",
+   "at": "באינסטגרם",
+   "until": "ביוטיוב"
+  },
+  {
+   "seg": "A",
+   "icons": [
+    [
+     "brand",
+     "youtube",
+     "יוטיוב"
+    ]
+   ],
+   "label": "יוטיוב היא המקור",
+   "at": "יוטיוב",
+   "until": "המקור"
+  },
+  {
+   "seg": "A",
+   "icons": [
+    [
+     "fl",
+     "gem_stone",
+     "העומק"
+    ]
+   ],
+   "label": "נבנה העומק",
+   "at": "נבנה",
+   "until": "העומק"
+  },
+  {
+   "seg": "A",
+   "icons": [
+    [
+     "brand",
+     "instagram",
+     "ואינסטגרם"
+    ],
+    [
+     "fl",
+     "megaphone",
+     "מפיצים"
+    ]
+   ],
+   "label": "מפיצים את המסר",
+   "at": "ואינסטגרם",
+   "until": "המסר"
+  },
+  {
+   "seg": "A",
+   "icons": [
+    [
+     "brand",
+     "instagram",
+     "העיקרון"
+    ],
+    [
+     "brand",
+     "tiktok",
+     "של"
+    ],
+    [
+     "brand",
+     "youtube",
+     "להיות"
+    ],
+    [
+     "brand",
+     "facebook",
+     "בכל"
+    ],
+    [
+     "brand",
+     "linkedin",
+     "מקום"
+    ]
+   ],
+   "label": "להיות בכל מקום",
+   "at": "העיקרון",
+   "until": "מקום"
+  },
+  {
+   "seg": "B",
+   "icons": [
+    [
+     "ai",
+     "openai",
+     "ש-AI"
+    ],
+    [
+     "ai",
+     "gemini-color",
+     "יודע"
+    ],
+    [
+     "ai",
+     "claude-color",
+     "לפענח"
+    ],
+    [
+     "ai",
+     "perplexity-color",
+     "ולפצח"
+    ]
+   ],
+   "label": "AI יודע לפענח",
+   "at": "ש-AI",
+   "until": "ולפצח"
+  },
+  {
+   "seg": "C",
+   "icons": [
+    [
+     "fl",
+     "gem_stone",
+     "תוכן"
+    ]
+   ],
+   "label": "תוכן עומק אחד טוב",
+   "at": "תוכן",
+   "until": "טוב"
+  }
+ ]
+}

@@ -103,6 +103,13 @@ python3 scripts/ugc.py qc reel.mp4 --format vertical
 (lobe-icons slug: `openai`, `gemini-color`, `claude-color`, `perplexity-color`, `grok`, `meta-color`);
 `label` = the person's OWN words; `at` = word that opens the card; `until` (word) or `dur` (seconds) closes it.
 Brand text: `wordmark`, `kicker`, `outro`, `lower`, `colors`, `replace`, `music`, `rtl`.
+**v2 (default, 08/10/2026): `scripts/wow_reel.py spec.json`** — same icons, plus: hook title in the first second
+(no logo intro), optional white editorial header (also hides text burned into a published clip), AI b-roll
+cutaways over her voice (Grok Imagine `image_gen` → `image_to_video` 720p, 9:16, her brand look, no faces),
+karaoke captions in a dark box with the spoken word in a red pill, jump cuts between her best sentences with
+alternating punch-in, progress bar, 3.4 s CTA outro in her words. Spec keys are in the script docstring;
+working examples: `examples/v1_source.json`, `examples/v2_rented.json`. Cut segments at word boundaries from the
+Scribe JSON; check her source for burned overlays (1 fps contact sheet) and cover or crop them.
 **Small changes she can ask for** (edit the spec, rebuild, re-render — about 2 minutes): another icon or logo,
 a different label, a card earlier/later or longer, shorter version (drop a clip), other colours, other
 wordmark or outro line, no music, Hebrew-only labels (`replace`), boxed vs outline captions, landscape copy
